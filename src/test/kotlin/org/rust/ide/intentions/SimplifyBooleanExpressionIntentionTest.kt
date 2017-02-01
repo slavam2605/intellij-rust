@@ -102,7 +102,7 @@ class SimplifyBooleanExpressionIntentionTest : RsIntentionTestBase(SimplifyBoole
 
     fun testNotAvailable4() = doUnavailableTest("""
         fn main() {
-            let a = a ||/*caret*/ true || true;
+            let a = f() ||/*caret*/ true || true;
         }
     """)
 
